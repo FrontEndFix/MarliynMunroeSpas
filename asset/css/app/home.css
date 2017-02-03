@@ -2,15 +2,39 @@
   float: left;
   width: 100vw;
   height: 100vh;
-  overflow-y: auto; }
+  overflow-y: auto;
+  overflow-x: hidden; }
   .mun-box .mun-background {
     float: left;
     width: 100%;
     height: 100%;
-    background: url(../../image/i-munroe.jpg) no-repeat;
+    background: url(../../image/i-munroe-clr.jpg) no-repeat;
     background-size: 64% auto;
     background-position: 130% 100%;
     background-color: #e1e1e1; }
+    .mun-box .mun-background .mun-menu {
+      margin-top: 1rem;
+      position: relative;
+      text-align: center; }
+      .mun-box .mun-background .mun-menu span {
+        font-size: 2rem;
+        color: #444;
+        padding: 1rem 0;
+        margin: 0 2.5rem;
+        cursor: pointer; }
+        .mun-box .mun-background .mun-menu span.active {
+          color: #AE0909;
+          border-bottom: .2rem solid #AE0909;
+          font-weight: 900; }
+    .mun-box .mun-background .mun-banner {
+      position: relative;
+      font-size: 1.5rem;
+      color: #fff;
+      background: #AE0909;
+      padding: .5rem 2rem;
+      top: 7rem;
+      left: calc(100vw - 15rem);
+      width: 15rem; }
     .mun-box .mun-background .mun-logo {
       float: left;
       width: 100%;
@@ -28,7 +52,7 @@
         color: #AE0909; }
     .mun-box .mun-background .mun-spa {
       width: 100%;
-      margin-left: 42.2%;
+      margin-left: 45.2%;
       float: left;
       color: #AE0909;
       font-size: 2.5rem; }
@@ -59,14 +83,13 @@
     height: 100%;
     background: url(../../image/inspiration-geometry.png) repeat;
     background-color: #AE0909;
-    padding: 5rem 15rem; }
+    padding: 15rem 15rem; }
     .mun-box .mun-story .mun-s-head {
       float: left;
       width: 100%;
       font-size: 6rem;
       text-align: center;
-      color: #fff;
-      font-family: "Pacifico"; }
+      color: #fff; }
     .mun-box .mun-story .mun-s-des {
       float: left;
       margin-top: 5rem;
@@ -76,39 +99,349 @@
     float: left;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(180deg, #ae0909, #e1e1e1);
-    background: linear-gradient(180deg, #ae0909, #e1e1e1);
+    background: url(../../image/inspiration-geometry.png) repeat;
+    background-color: #AE0909;
     padding: 5rem 15rem; }
+    .mun-box .mun-about.last {
+      padding: 2rem 14rem; }
     .mun-box .mun-about .mun-s-head {
       float: left;
       width: 100%;
       font-size: 6rem;
       text-align: center;
-      color: #fff;
-      font-family: "Pacifico"; }
+      color: #fff; }
     .mun-box .mun-about .mun-s-des {
       float: left;
       margin-top: 5rem;
       font-size: 2.2rem;
       color: #fff; }
+    .mun-box .mun-about .about-1 {
+      float: left;
+      width: 30rem;
+      height: 20rem;
+      background: #e1e1e1;
+      transition: all .3s;
+      margin-left: 3rem; }
+      .mun-box .mun-about .about-1:hover {
+        cursor: pointer;
+        transform: scale(1.1); }
+      .mun-box .mun-about .about-1 .cover {
+        float: left;
+        width: 100%;
+        height: 100%;
+        background: url(../../image/Lakeside+1.jpg) no-repeat;
+        background-size: contain; }
+      .mun-box .mun-about .about-1 .info {
+        float: left;
+        width: 100%;
+        height: 5rem;
+        background: #e1e1e1;
+        font-size: 1.5rem;
+        color: #AE0909;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 1.5rem; }
+      .mun-box .mun-about .about-1 .hvr-bounce-to-right {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s; }
+      .mun-box .mun-about .about-1 .hvr-bounce-to-right:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #eb4747;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .mun-box .mun-about .about-1 .hvr-bounce-to-right:hover,
+      .mun-box .mun-about .about-1 .hvr-bounce-to-right:focus,
+      .mun-box .mun-about .about-1 .hvr-bounce-to-right:active {
+        color: white; }
+      .mun-box .mun-about .about-1 .hvr-bounce-to-right:hover:before,
+      .mun-box .mun-about .about-1 .hvr-bounce-to-right:focus:before,
+      .mun-box .mun-about .about-1 .hvr-bounce-to-right:active:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+    .mun-box .mun-about .about-2 {
+      float: left;
+      width: 30rem;
+      height: 20rem;
+      background: #e1e1e1;
+      transition: all .3s;
+      margin-left: 5rem; }
+      .mun-box .mun-about .about-2:hover {
+        cursor: pointer;
+        transform: scale(1.1); }
+      .mun-box .mun-about .about-2 .cover {
+        width: 100%;
+        height: 100%;
+        background: url(../../image/Mani+bar+Maui.jpg) no-repeat;
+        background-size: contain; }
+      .mun-box .mun-about .about-2 .info {
+        float: left;
+        width: 100%;
+        height: 5rem;
+        background: #e1e1e1;
+        font-size: 1.5rem;
+        color: #AE0909;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 1.5rem; }
+      .mun-box .mun-about .about-2 .hvr-bounce-to-right {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s; }
+      .mun-box .mun-about .about-2 .hvr-bounce-to-right:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #eb4747;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .mun-box .mun-about .about-2 .hvr-bounce-to-right:hover,
+      .mun-box .mun-about .about-2 .hvr-bounce-to-right:focus,
+      .mun-box .mun-about .about-2 .hvr-bounce-to-right:active {
+        color: white; }
+      .mun-box .mun-about .about-2 .hvr-bounce-to-right:hover:before,
+      .mun-box .mun-about .about-2 .hvr-bounce-to-right:focus:before,
+      .mun-box .mun-about .about-2 .hvr-bounce-to-right:active:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+    .mun-box .mun-about .about-3 {
+      float: left;
+      width: 30rem;
+      height: 20rem;
+      background: #000;
+      transition: all .3s;
+      margin-left: 5rem; }
+      .mun-box .mun-about .about-3:hover {
+        cursor: pointer;
+        transform: scale(1.1); }
+      .mun-box .mun-about .about-3 .cover {
+        width: 100%;
+        height: 100%;
+        background: url(../../image/MM.png) no-repeat;
+        background-position-y: 98%;
+        background-size: contain; }
+      .mun-box .mun-about .about-3 .info {
+        float: left;
+        width: 100%;
+        height: 5rem;
+        background: #e1e1e1;
+        font-size: 1.5rem;
+        color: #AE0909;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 1.5rem; }
+      .mun-box .mun-about .about-3 .hvr-bounce-to-right {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s; }
+      .mun-box .mun-about .about-3 .hvr-bounce-to-right:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #eb4747;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .mun-box .mun-about .about-3 .hvr-bounce-to-right:hover,
+      .mun-box .mun-about .about-3 .hvr-bounce-to-right:focus,
+      .mun-box .mun-about .about-3 .hvr-bounce-to-right:active {
+        color: white; }
+      .mun-box .mun-about .about-3 .hvr-bounce-to-right:hover:before,
+      .mun-box .mun-about .about-3 .hvr-bounce-to-right:focus:before,
+      .mun-box .mun-about .about-3 .hvr-bounce-to-right:active:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+    .mun-box .mun-about .mun-form {
+      float: left;
+      background: #e1e1e1;
+      width: calc(100% - 20rem);
+      height: 40rem;
+      margin-top: 9rem;
+      margin-left: 10rem;
+      padding: 2rem 5rem; }
+      .mun-box .mun-about .mun-form .mun-cont {
+        float: left;
+        width: 100%;
+        margin: 3rem 0 4rem 0;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 900;
+        color: #AE0909; }
+      .mun-box .mun-about .mun-form .mun-fname {
+        float: left;
+        width: 45%;
+        height: 3rem;
+        border: none; }
+      .mun-box .mun-about .mun-form .mun-lname {
+        float: left;
+        width: 45%;
+        height: 3rem;
+        border: none;
+        margin-left: 10%; }
+      .mun-box .mun-about .mun-form .mun-phone {
+        float: left;
+        width: 45%;
+        height: 3rem;
+        border: none;
+        margin-top: 2rem; }
+      .mun-box .mun-about .mun-form .mun-email {
+        float: left;
+        width: 45%;
+        height: 3rem;
+        border: none;
+        margin-left: 10%;
+        margin-top: 2rem; }
+      .mun-box .mun-about .mun-form .mun-description {
+        float: left;
+        width: 100%;
+        height: 3rem;
+        border: none;
+        margin-top: 2rem; }
+      .mun-box .mun-about .mun-form input:focus {
+        outline: none; }
+      .mun-box .mun-about .mun-form input {
+        width: calc(100% - 2px);
+        margin-left: 1px;
+        padding-bottom: 2px;
+        background: #e1e1e1;
+        color: #444; }
+      .mun-box .mun-about .mun-form input {
+        border: 0;
+        cursor: text; }
+      .mun-box .mun-about .mun-form .underline {
+        background-color: #ccc;
+        transition: color 0.5s, background 0.5s, border 0.5s, text-shadow 0.5s;
+        z-index: 0;
+        height: .2rem;
+        margin-top: 0;
+        width: 100%; }
+      .mun-box .mun-about .mun-form input:focus ~ .underline {
+        background-color: #AE0909; }
+      .mun-box .mun-about .mun-form button {
+        background-color: #AE0909;
+        float: left;
+        padding: .5rem 3rem;
+        font-size: 2.5rem;
+        color: #fff;
+        border: none;
+        box-shadow: none;
+        transition: all .3s;
+        margin-left: 27.5rem;
+        margin-top: 5rem; }
+        .mun-box .mun-about .mun-form button:hover {
+          background: #eb4747; }
   .mun-box .mun-special {
     float: left;
     width: 100%;
-    height: 310rem;
+    height: 190rem;
     background: url(../../image/black-thread-light.png) repeat;
     background-color: #e1e1e1;
     padding: 5rem 30rem; }
+    .mun-box .mun-special.contact {
+      height: 70vh;
+      padding: 16rem 30rem; }
+      .mun-box .mun-special.contact .mun-address {
+        float: left;
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 900;
+        color: #AE0909; }
+      .mun-box .mun-special.contact .mun-add2 {
+        float: left;
+        width: 100%;
+        color: #444;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 4rem; }
+      .mun-box .mun-special.contact .mun-add3 {
+        float: left;
+        width: 100%;
+        color: #444;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1rem; }
+      .mun-box .mun-special.contact .mun-add4 {
+        float: left;
+        width: 100%;
+        color: #444;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1rem; }
     .mun-box .mun-special .mun-s-head {
       float: left;
       width: 100%;
       font-size: 6rem;
       text-align: center;
-      color: #AE0909;
-      font-family: "Pacifico"; }
+      color: #AE0909; }
     .mun-box .mun-special .mum-s-container {
       float: left;
       width: 100%;
-      height: 276rem;
+      height: 156rem;
       margin-top: 11rem; }
       .mun-box .mun-special .mum-s-container .left {
         float: left;
@@ -130,13 +463,14 @@
             .mun-box .mun-special .mum-s-container .left .lbox.grey.clean {
               padding-top: 6.5rem; }
             .mun-box .mun-special .mum-s-container .left .lbox.grey.products {
-              padding-top: 4rem; }
+              padding-top: 2.5rem; }
+            .mun-box .mun-special .mum-s-container .left .lbox.grey.support {
+              padding-top: 8rem; }
           .mun-box .mun-special .mum-s-container .left .lbox .l-head {
             float: left;
             width: 100%;
             font-size: 2.2rem;
-            color: #fff;
-            font-family: "Pacifico"; }
+            color: #fff; }
           .mun-box .mun-special .mum-s-container .left .lbox .l-content {
             float: left;
             width: 100%;
@@ -147,6 +481,26 @@
             float: left;
             width: 100%;
             height: 100%; }
+            .mun-box .mun-special .mum-s-container .left .lbox .limg.the-icon {
+              background: url(../../image/i-the-icon.png) no-repeat;
+              background-size: contain;
+              -webkit-transform: scaleX(-1);
+              -moz-transform: scaleX(-1);
+              -ms-transform: scaleX(-1);
+              -o-transform: scaleX(-1);
+              transform: scaleX(-1);
+              background-color: #0A0A0A; }
+            .mun-box .mun-special .mum-s-container .left .lbox .limg.cleanliness {
+              background: url(../../image/i-cleanliness.jpg) no-repeat;
+              background-size: 120% 100%;
+              background-color: #0A0A0A; }
+            .mun-box .mun-special .mum-s-container .left .lbox .limg.allservices {
+              background: url(../../image/unnamed-3.jpg) no-repeat;
+              background-size: 130% 100%;
+              background-color: #0A0A0A; }
+            .mun-box .mun-special .mum-s-container .left .lbox .limg.products {
+              background: url(../../image/i-products.png) no-repeat;
+              background-size: 100% 100%; }
             .mun-box .mun-special .mum-s-container .left .lbox .limg.location {
               background: url(../../image/i-loction.png) no-repeat;
               background-size: 107% 106%;
@@ -158,9 +512,9 @@
               background-position: 43%;
               background-color: #0A0A0A; }
             .mun-box .mun-special .mum-s-container .left .lbox .limg.unisex {
-              background: url(../../image/i-unisex.png) no-repeat;
-              background-size: 50%;
-              background-position: 43%; }
+              background: url(../../image/blog-detail-1.jpg) no-repeat;
+              background-size: 139% 100%;
+              background-position: 53%; }
       .mun-box .mun-special .mum-s-container .right {
         float: left;
         border-left: .1rem solid #AE0909;
@@ -180,6 +534,8 @@
               padding-top: 9.5rem; }
             .mun-box .mun-special .mum-s-container .right .rbox.grey.resort {
               padding-top: 4.5rem; }
+            .mun-box .mun-special .mum-s-container .right .rbox.grey.unisex {
+              padding-top: 9rem; }
           .mun-box .mun-special .mum-s-container .right .rbox .rimg {
             float: left;
             width: 100%;
@@ -204,12 +560,25 @@
             .mun-box .mun-special .mum-s-container .right .rbox .rimg.products {
               background: url(../../image/i-products.png) no-repeat;
               background-size: 100% 100%; }
+            .mun-box .mun-special .mum-s-container .right .rbox .rimg.location {
+              background: url(../../image/i-loction.png) no-repeat;
+              background-size: 107% 106%;
+              background-position: 48%;
+              background-color: #0A0A0A; }
+            .mun-box .mun-special .mum-s-container .right .rbox .rimg.resort {
+              background: url(../../image/i-standout.png) no-repeat;
+              background-size: 107% 105%;
+              background-position: 43%;
+              background-color: #0A0A0A; }
+            .mun-box .mun-special .mum-s-container .right .rbox .rimg.unisex {
+              background: url(../../image/i-unisex.png) no-repeat;
+              background-size: 50%;
+              background-position: 43%; }
           .mun-box .mun-special .mum-s-container .right .rbox .r-head {
             float: left;
             width: 100%;
             font-size: 2.2rem;
-            color: #fff;
-            font-family: "Pacifico"; }
+            color: #fff; }
           .mun-box .mun-special .mum-s-container .right .rbox .r-content {
             float: left;
             width: 100%;
@@ -218,8 +587,8 @@
             margin-top: 2rem; }
   .mun-box .mun-footer {
     width: 100%;
-    height: 20rem;
-    padding-top: 7rem;
+    height: 30vh;
+    padding: 7rem 30rem 0 30rem;
     text-align: center;
     float: left;
     background: #a73737;
@@ -228,6 +597,9 @@
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #a73737, #7a2828);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+    .mun-box .mun-footer .mun-disclaimer {
+      font-size: 1.3rem;
+      color: #fff; }
     .mun-box .mun-footer .mun-flight {
       float: left;
       width: 6rem;
@@ -242,3 +614,12 @@
       font-size: 2rem;
       padding-top: 1rem;
       margin-left: 3rem; }
+
+.coming-soon {
+  position: absolute;
+  width: 50rem;
+  height: 39rem;
+  background: url(../../image/comingsoon.png) no-repeat;
+  background-size: contain;
+  left: calc(50vw - 25rem);
+  top: calc(50vh - 19.5rem); }

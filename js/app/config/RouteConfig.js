@@ -20,6 +20,11 @@ var App;
                 controllerAs: "vm",
                 templateUrl: "template/home.html"
             })
+                .when('/comingsoon', {
+                controller: "homeController",
+                controllerAs: "vm",
+                templateUrl: "template/comingsoon.html"
+            })
                 .otherwise({ redirectTo: "home" });
             this.$locationProvider.html5Mode({
                 enabled: false,

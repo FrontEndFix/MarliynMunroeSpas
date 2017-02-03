@@ -4,7 +4,7 @@ var App;
 (function (App) {
     'use strict';
     (function () {
-        var dependencies = ['app.core', 'ngRoute', 'toaster', 'ngAnimate', 'ui.bootstrap', 'angular-input-stars'];
+        var dependencies = ['app.core', 'ngRoute', 'toaster', 'ngAnimate', 'ui.bootstrap', 'angular-input-stars', 'duScroll'];
         angular.module('app', dependencies)
             .controller('homeController', App.Controller.HomeController)
             .directive("compareTo", App.Directive.CompareTo.factory)
